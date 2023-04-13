@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #353;
+}
+
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: blue;
+}
+
+
+.column {
+  float: left;
+  padding: 10px;
+}
+
+
+.column.side {
+  width: 25%;
+}
+
+.column.middle {
+  width: 50%;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+
+
+.footer {
+  background-color: #f1f1f1;
+  padding: 5px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Header</h1>
+
+</div>
+
+<div class="topnav">
+  <a href="#">Home</a>
+  <a href="#">Register</a>
+  <a href="#">Link</a>
+</div>
+
+<div class="row">
+  <div class="column side">
+    <h2>Side</h2>
+    <p>                                                                       
+        Former Karnataka Chief Minister and BJP leader BS Yediyurappa has made a big announcement on Friday. BS Yediyurappa has said that he will vacate his Shikaripura seat for the assembly elections to be held next year. He also said that his son BY Vijayendra will contest the seat vacated by him. In such a situation, his announcement is being seen as the end of his innings in electoral politics. Yediyurappa said, 'I am not contesting elections, Vijayendra will contest from Shikaripura." On workers' demand for Vijayendra to contest from Old Mysore region, Yediyurappa said, "I have a lot of pressure to contest from there, but I am vacating the seat and will not contest, so Vijayendra will contest from Shikaripura."
+    
+    
+    
+    
+    
+    
+    
+    </p>
+  </div>
+  
+  <div class="column middle">
+    <h2>Main Content</h2>
+    <p>                                                                       
+        
+    
+        Vijayendra was made the Vice President of Karnataka BJP in July 2020. Earlier he was appointed general secretary of BJP youth wing by the party soon after he was denied ticket to contest from Varuna constituency in Mysore ahead of May 2018 assembly elections.
+    
+    
+    
+    </p>
+
+  </div>
+  
+  <div class="column side">
+    <h2>Side</h2>
+    <p>                                                                    
+        
+        In the by-elections held in 2019 and 2020, Vijayendra remained in the limelight within the party. He played a key role in BJP's victory in KR Pete and Sira assembly constituencies during the by-elections. Now it is to be seen whether the party leadership in the upcoming assembly will go ahead as per BS Yediyurappa and get his son to field from Shikaripura or there will be a twist.
+
+
+
+        Start the conversation
+        Sponsored Content
+    
+    
+    
+    
+    </p>
+
+  </div>
+</div>
+
+<div class="footer">
+  <p>Footer</p>
+</div>
+  
+</body>
+</html>
+
+

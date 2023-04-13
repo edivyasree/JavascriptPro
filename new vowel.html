@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+</head>
+
+<body>
+    <script>
+        var vowel = "aeiou";
+        let sentence = "welcome to this beautiful world";
+        let arr = sentence.split(' ');
+        let arr1 = [];
+        fetch('https://jsonplaceholder.typicode.com/posts/1')
+            .then(response => response.json())
+            .then(data => {
+          console.log(data);
+    
+
+                arr.forEach(data=>{
+                    if (vowel.indexOf(data[data.length-1])>-1) 
+                    {
+                        arr1.push(`${data}/`);
+                    } 
+                    else 
+                    {
+                        arr1.push(`${data}-`)
+                    }
+                });
+                console.log(arr1.join(' '))
+            })
+    </script>
+</body>
+
+</html>

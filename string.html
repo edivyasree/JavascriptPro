@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+   <h2> Reverse the string in place in JavaScript. </h2>
+   <p> After reversing the "TutorialsPoint" string using reverse() method: </p>
+   <div id="output"></div>
+   <script>
+      let output = document.getElementById("output");
+      let string = "TutorialsPoint";
+      let charArray = [...string];
+      charArray.reverse();
+      string = charArray.join('');
+      output.innerHTML = string;
+   </script>
+</body>
+</html>

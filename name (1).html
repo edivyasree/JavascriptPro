@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+</head>
+<body>
+  First name:<br>
+  <input type="text" name="firstname">
+  <br>
+  Last name:<br>
+  <input type="text" name="lastname">
+  <br>
+  <input type="button" value="Send" onclick="MyFunction()">
+      <div id="here"></div>    
+
+      <script> 
+        function MyFunction() {
+         var first, second;
+         first = document.getElementById("firstname").value;
+         second = document.getElementById("lastname").value;
+         
+         document.GetElementById("here").InnerHTML = first;
+         document.GetElementById("here").InnerHTML = second;
+        }
+        </script>
+        </body>
+     
+</html>

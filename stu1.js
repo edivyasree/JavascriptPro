@@ -1,0 +1,76 @@
+ 
+function validate() {    
+    var fname = document.reg_form.fname;    
+    var lname = document.reg_form.lname;    
+    var address = document.reg_form.address;    
+    var gender = document.reg_form.gender;    
+    var email = document.reg_form.email;    
+    var mobile = document.reg_form.mobile;    
+    var course = document.reg_form.course;    
+
+    if (fname.value.length <= 0) {    
+        alert("First Name is required");    
+        fname.focus();    
+        return false;    
+    }   
+    else if(fname.value.length>=15)
+    {
+       alert ("First name cant be greater than 15 characters");
+       fname.focus();
+       return false;
+    }
+   
+
+    if (lname.value.length <= 0) {    
+        alert("Last Name is required");    
+        lname.focus();    
+        return false;    
+    } 
+       else if(lname.value.length>=15)
+    {
+       alert ("Lastname cant be greater than 15 characters");
+       lname.focus();
+       return false;
+    }
+/* else if(lname.value=/^[a-zA-Z]+$/)
+    {
+       alert("no special characters")
+        lname.focus();
+        return false;
+    }*/
+
+
+    if (address.value.length <= 0) {    
+        alert("Address is required");    
+        address.focus();    
+        return false;    
+    } 
+    else if(address.value.length>=50)
+    {
+       alert ("Adress cant be greater than 50 characters");
+       fname.focus();
+       return false;
+    }
+    if (mobile.value.length <=0) {    
+        alert("Mobile number is required");    
+        mobile.focus();    
+        return false;    
+    }    
+    else if(mobile.value.length>=11)
+    {
+       alert ("Mobile no cant be greater than 10 digits");
+     mobile.focus();
+       return false;
+    }
+    if (gender.value.length <= 0) {    
+        alert("Gender is required");    
+        gender.focus();    
+        return false;    
+    }    
+    if (email.value.length <= 0) {    
+        alert("Email Id is required");    
+        email.focus();    
+        return false;    
+    }    
+    return false;    
+}   

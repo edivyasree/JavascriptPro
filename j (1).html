@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jenkins Interface</title>
+</head>
+<body>
+   
+    <form align="center">
+       <h1>Jenkins Interface</h1>
+       <label for="Jenkins Job">Jenkins Job:</label>
+
+       <select name="Jenkins Job" id="Job">
+         <option value="Freestyle project">Freestyle project</option>
+         <option value="Pipeline">Pipeline</option>
+         <option value="External Job">External Job</option>
+         <option value="Github organization">Github organization</option>
+       </select>
+       <br>
+       <br>
+       <br>
+       <hr/>
+<label>Basic Parameters</label>
+<br>
+<br>
+<label for="AWS Account">AWS Account:</label>
+
+<select name="AWS Account" id="AWS Account">
+  <option value="AWS Account">AWS Account</option>
+  <option value="Pipeline">Pipeline</option>
+  <option value="External Job">External Job</option>
+  <option value="Github organization">Github organization</option>
+</select><br>
+<br>
+<label for="AWS Region">AWS Region:</label>
+
+<select name="AWS Region" id="AWS Region">
+    <option value="Asia">Asia</option>
+    <option value="Pipeline">Pipeline</option>
+    <option value="External Job">External Job</option>
+    <option value="Github organization">Github organization</option>
+  </select>
+  
+    <hr/>
+    <label>Additional Parameters</label>
+    <br>
+    
+    <br>
+    AWS S3 Bucket<input type="text"><br><br>
+    Evakuation Env.Nuumber<input type="text"><br><br>
+    AP2 Version<input type="text">
+    <br>
+    <p>Shift:
+      <input type="radio" id="day" name="Shift" value="morning">
+      <label for="morning">morning</label>
+    <input type="radio" id="day" name="Shift" value="night">
+      <label for="night">night</label>
+      </p>
+    <hr/>
+    <input type="checkbox" id="accept" name="accept" value="Submitted Successfully">
+    
+  
+  <label for="accept"> To accept the terms and conditions</label><br><br>
+  <button id="btn">Submit</button>
+  <input type="reset" value="Reset">
+   <script>
+       
+     
+        const cb = document.querySelector('#accept');
+        const btn = document.querySelector('#btn');
+        btn.onclick = () => {
+           alert(cb.value);
+        };
+    </script>
+<br>
+</form>
+</body>
+</html>
+
