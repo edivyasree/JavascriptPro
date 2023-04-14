@@ -12,7 +12,7 @@ for (let i of str) {
     }
 }
 sum = count + count1 + count2;
-console.log(sum)
+console.log(count)
 
 
 // let str1="aaabbbbbbbbcccdddd"
