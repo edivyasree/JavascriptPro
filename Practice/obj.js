@@ -7,4 +7,4 @@ let arr={
 
 }
 let arr2=Object.entries(arr)
-console.log(Object.values(arr2))
+console.log(arr2)
